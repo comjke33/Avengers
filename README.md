@@ -13,3 +13,6 @@
 - SQL 
 - HTML & CSS & JAVASCRIPT 
 - Node.js
+
+### 2023 1학기 ###
+- 인천 공공데이터 활용 대회 참가
