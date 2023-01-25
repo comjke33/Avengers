@@ -4,7 +4,6 @@ web, client → server(web server 多) → DBMS (database management system)
 
 대부분 DBMS 하나만 둠
 
----
 
 Relational Database (RDBMS)
 
@@ -14,7 +13,7 @@ Relation = Tuple(records) + Attribute
 
 excel의 sheet와 매우 비슷하다.
 
----
+
 
  database server = instance(다룰 수 있도록 하는 프로그래밍 영역) + database(데이터베이스)
 
@@ -42,7 +41,7 @@ RDBMS: relational database management system
 - MariaDB → 무료 (MySQL의 오픈소스 버전)
 - Hive
 
----
+
 
 SQL : Structured Query Language
 
@@ -67,7 +66,7 @@ database를 구축하는 순서
 3. insert data
 4. retrieve data
 
----
+
 
 user → RDBMS(mysql) → computer(C)
 
@@ -89,7 +88,7 @@ DBMS version check
 
 - administation → server status → 관련 정보 다 나옴
 
----
+
 
 Create table for temperature from buildings
 
@@ -115,14 +114,13 @@ table name, charset, comments
 - charset → utf-8
 - comments: 그냥 설명
 
----
+
 
 - int
 - smallint
 - float
 - timestamp
 
----
 
 - UN: unsigned 부호없는
 - NN: not null null이 없는, 허용하지 않음
@@ -136,7 +134,6 @@ table name, charset, comments
 - ZF: zero fill 0으로 채운다.
 - INT(10): 무조건 자리는 10자리가 되어야함.
 
----
 
 UTC 알아서 세계시간을 한국시간에 맞춰줌
 
@@ -150,7 +147,7 @@ TIMESTAMP 이용
 - insert into ~ values
 - insert ignore into ~ values
 
----
+
 
 1. **Create table**
 
@@ -205,7 +202,6 @@ insert into Building_Info values(null,2,'수영장');
     ex) 1, 2, 3, 4, 10, 11, 12 순
     
 
----
 
 1. **insert ignore into ~ values**
 
@@ -237,7 +233,7 @@ update `Building_Info` set `building_name` = '첨단연구동' where `building_i
 
 - 테이블의 빌딩 이름 column을 첨단연구동으로 바꾼다. id가 1인 column을!
 
----
+
 
 1. **alter table add**
 
@@ -267,8 +263,6 @@ update `Building Info` set `max_capacity`= `max_capacity`*2 where `Building_name
 
 - 식당에 있는 최대 인원을 2배로 증축했다면?
 
----
-
 1. **on duplicate key update**
 
 ```sql
@@ -278,7 +272,7 @@ on duplicate key update `Building_name` = `자연연구동`;
 
 - unique라서 원래는 ERROR를 일으키지만, 만약 에러가 나면 자연연구동으로 바꿔달라는 명령어
 
----
+
 
 1. **delate from ~ where**
 
