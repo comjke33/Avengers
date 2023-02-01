@@ -81,3 +81,55 @@ Link 태그(anchor tag의 attribute, href(hypertext reference))
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/842d333c-13b1-45ee-a2f9-9e78f02fff94/Untitled.png)
 
 ---
+    
+## 3.
+그룹화하고 점으로 작성
+
+```html
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ol> <!-- unordered list -->
+            <li>첫번째</li> <!-- list item-->
+            <li>두번째</li> 
+            <li>세번째</li>
+            <li>네번째</li>
+        </ol>
+        <ul> <!-- unordered list -->
+            <li>첫번째</li> <!-- list item-->
+            <li>두번째</li> 
+            <li>세번째</li>
+            <li>네번째</li>
+        </ul>
+    </body>
+</html>
+```
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c8b0b2e8-be5c-43a5-b048-bcf191243b18/Untitled.png)
+
+ul : unordered list → 순서 없이 list를 만듬
+
+ol : ordered list → 순서 있는 list를 만듬
+
+---
+
+hr: 줄 표시
+
+```html
+<hr>
+```
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c1f8a5e-46b5-4cd3-985f-16151f5621f5/Untitled.png)
+
+---
+
+img 태그
+
+```html
+<img src="./grass.jpg" alt="풀깎지 않은 엉망 풍경"> <!-- ./같은 폴더--> <!--alternative, 대체-->
+```
+
+- src는 저장된 사진 파일 이름
+- alt은 alternative의 줄임말로 사진이 없을 때 대체로 표현될 텍스트
