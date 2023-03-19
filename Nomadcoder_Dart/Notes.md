@@ -1,4 +1,4 @@
-### #0 introduction
+# #0 introduction
 ## 0.0. Dart란
 
 - Flutter 애플리케이션을 구축하기 위해 필요한 언어 → Dart
